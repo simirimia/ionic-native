@@ -198,6 +198,11 @@ export class NFC extends IonicNativePlugin {
   @Cordova({ sync: true })
   bytesToHexString(bytes: number[]): string { return; };
 
+  @Cordova()
+  beginSession(): Promise<any> { return; }
+
+  @Cordova()
+  invalidateSession(): Promise<any> { return; }
 }
 /**
  * @hidden
